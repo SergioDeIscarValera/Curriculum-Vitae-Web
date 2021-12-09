@@ -9,7 +9,7 @@
     }
 
     html, body{
-        height: 300vh;
+        min-height: 300vh;
     }
 
     body{
@@ -35,7 +35,7 @@
         position: absolute;
         z-index: 1;
         width: 100%;
-        height: 300vh;
+        min-height: 300vh;
         display: grid;
         place-content: left;
         transition: 150ms all ease-in;
@@ -59,9 +59,9 @@
     }
 
     .navegation a {
-        font-size: 2.5rem;
+        font-size: 3.5vw;
         color: #ffc872;
-        margin-left: 30px;
+        margin-left: 3vw;
         display: inline-block;
         text-decoration: none;
         cursor: pointer;
@@ -82,7 +82,7 @@
 /* Header */
 
     .header{
-        height: 100vh;
+        min-height: 100vh;
         padding: 20px 50px;
         display: flex;
         flex-direction: column;
@@ -94,12 +94,12 @@
 
         .header h1{
             color: #ffe3b3;
-            font-size:7rem;
+            font-size: 8vw;
         }
 
         .header h2{
             color: #ffe3b3;
-            font-size: 4rem;
+            font-size: 4vw;
         }
 
         .header h2 .auto-input{
@@ -109,7 +109,7 @@
 /* Work */
     .work{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         padding: 0 50px ;
         display: flex;
         flex-direction:column;
@@ -117,16 +117,25 @@
     }
 
     .work h2{
-        font-size: 4rem;
+        font-size: 5vw;
         color: #7ace67;
     }
 
     .work #SubTitle{
         color: #ffe3b3;
-        font-size: 1rem;
+        font-size: 1vw;
         opacity: 0.5;
         transform: translateX(33px);
-        margin: 20px 0;
+        margin: 20px 0 30px 0 ;
+    }
+    .work .SubWork{
+        max-width: 90%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: left;
     }
     .work .SubWork #bola2{
         width: 10px;
@@ -148,7 +157,7 @@
     }
 
     .work #iconoMenu{
-        font-size: 4rem;
+        font-size: 3.5vw;
         color: #7ace67;
         margin-left: 20px;
         margin-top: 7px;
@@ -214,7 +223,7 @@
         }
         .linkContenido h3{
             color: #ffe3b3;
-            font-size: 2rem;
+            font-size: 1.8vw;
             opacity: 0.5;
             transition: 150ms all;
         }
@@ -229,7 +238,7 @@
         }
         .linkContenido h4{
             color: #ffe3b3;
-            font-size: 1.5rem;
+            font-size: 1vw;
             margin-left: 20px;
             opacity: 0.4;
             transition: 150ms all;
@@ -250,7 +259,7 @@
 /* About */
     .about{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         padding: 0 50px;
         display: flex;
         flex-direction: column;
@@ -258,13 +267,14 @@
     }
 
     .about h2{
-        font-size: 4rem;
+        font-size: 5vw;
         color: #7ace67;
     }
 
     .about p{
         color: #ffe3b3;
-        font-size: 2;
+        font-size: 1.8vw;
+        max-width: 40%;
     }
 
 /* Footer */
@@ -278,7 +288,7 @@
     }
 
     .footer a {
-        font-size: 1.8rem;
+        font-size: 3vw;
         color: #ffc872;
         margin-right: 30px;
         display: inline-block;
@@ -321,6 +331,12 @@
             font-size: 2.85ren;
         }
         
+    }
+
+    @media screen and (max-height: 370px) { /* Pantalla Estrecha */
+        .footer{
+            display: none;
+        }
     }
 
 /*# sourceMappingURL=main.css.map*/
