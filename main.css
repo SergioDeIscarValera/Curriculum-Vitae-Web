@@ -51,7 +51,7 @@
     .barra{
         height: 100vh;
         position: fixed;
-        max-width: 4vw;
+        /*max-width: 2vw;*/
         top: 0;
         right: 1%;
         margin: 0;
@@ -66,11 +66,10 @@
         .navegation{
             /*transform: rotate(-90deg) translateX(28px);*/
             margin: 5vh 0 0 0;
-            padding: 0;
         }
 
         .navegation a {
-            font-size: 2.5vw;
+            font-size: 1.5vw;
             color: #ffc872;
             display: inline-block;
             padding: 0.7vh;
@@ -89,6 +88,9 @@
 
         .navegation ul li{
             list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
         }
 
     /* Footer */
@@ -99,7 +101,7 @@
         }
 
         .footer a {
-            font-size: 2.5vw;
+            font-size: 1.5vw;
             color: #ffc872;
             display: inline-block;
             padding: 0.7vh;
@@ -118,6 +120,9 @@
 
         .footer ul li{
             list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
         }
 
 /* Header */
@@ -135,12 +140,12 @@
 
         .header h1{
             color: #ffe3b3;
-            font-size: 8vw;
+            font-size: 6vw;
         }
 
         .header h2{
             color: #ffe3b3;
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
 
         .header h2 .auto-input{
@@ -167,7 +172,6 @@
         font-size: 1vw;
         opacity: 0.5;
         transform: translateX(33px);
-        margin: 20px 0 30px 0 ;
     }
     .work .SubWork{
         max-width: 90%;
@@ -212,11 +216,19 @@
         transform: translateX(-10px);
     }
 
-    .title{
+    .titleDiv{
         display: flex;
         flex-direction:row;
         justify-content: flex-start;
         align-items: center;
+        margin: 0 0 2vh 0;
+    }
+    .SubTitleDiv{
+        display: flex;
+        flex-direction:row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 5vh 0;
     }
 
     .work #gradient{
@@ -309,13 +321,13 @@
     }
 
     .about h2{
-        font-size: 5vw;
+        font-size: 4vw;
         color: #7ace67;
     }
 
     .about p{
         color: #ffe3b3;
-        font-size: 1.8vw;
+        font-size: 1.3vw;
         max-width: 40%;
     }
 
@@ -334,17 +346,65 @@
         } 
     }*/
 
-    @media screen and (max-width: 500px) { /* Pantalla Pequeña */
+    @media screen and (max-width: 700px) { /* Pantalla Pequeña */
         .header h1{
-            font-size: 4rem;
+            font-size: 11vw;
         }
         .header h2{
-            font-size: 2.85ren;
+            font-size: 6vw;
         }
-        
+
+        /**/
+
+        .navegation a{
+            font-size: 6vw;
+        }
+        .footer a{
+            font-size: 6vw;
+        }
+
+        /**/
+
+        .work h2{
+            font-size: 10vw;
+        }
+        .work #iconoMenu{
+            font-size: 8vw;
+        }
+        .work .SubWork #bola2{
+            width: 1.1vw;
+            height: 1.1vh;
+        }
+        .work #SubTitle{
+            font-size: 3vw;
+        }
+
+        /**/
+
+        .linkContenido h3{
+            font-size: 4.5vw;
+        }
+        .linkContenido #bola{
+            width: 1.4vw;
+            height: 1.4vh;
+        }
+        .linkContenido h4{
+            font-size: 2.5vw;
+        }
+
+        /**/
+
+        .about h2{
+            font-size: 10vw;
+        }
+    
+        .about p{
+            font-size: 3.4vw;
+            max-width: 70%;
+        }
     }
 
-    @media screen and (max-height: 450px) { /* Pantalla Estrecha */
+    @media screen and (max-height: 280px) { /* Pantalla Estrecha */
         .footer{
             display: none;
         }
