@@ -300,8 +300,8 @@ const LamparaC = []
                         if(linkSolidityBooClcik== false){
                             InfoDiv.display = "block"
                             infoTitle.textContent = 'SOLIDITY'
-                            infoSubTitle.textContent = 'Solidity Subtitle:'
-                            infoText.textContent = 'Contenido solidity parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            infoSubTitle.textContent = 'El Lenguaje Del Futuro De Las Finanzas:'
+                            infoText.textContent = 'Las tecnologías avanzan muy rápido y hay que estar actualizándose constantemente, por eso he estudiado y aprendido el lenguaje de programación solidity. Este lenguaje se utiliza para crear smart contracts, que son trozos de códigos capaces de gestionar criptodivisas (como por ejemplo ethereum). Como con todo he aprendido por mi cuenta rebuscando por internet, pero en este caso me entusiasmo tanto que hice un curso por internet y he leído varios libro tutórales...'
                             InfoDiv.animation = 'infoDivAnim 200ms ease-out';
                             linkSolidityBooClcik = true
                         } else{
