@@ -48,43 +48,89 @@
         justify-content: center;
     }
 
-/* Navegacion */
-    
-    .navegation{
+/* Navegacion Y RRSS */
+    .barra{
+        height: 100vh;
         position: fixed;
-        top: 15px;
-        right: 20px;
-        text-align: right;
-        transform-origin: bottom right;
-        transform: rotate(-90deg) translateX(28px)
+        /*max-width: 2vw;*/
+        top: 0;
+        right: 1%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
     }
 
-    .navegation a {
-        font-size: 2.5rem;
-        color: #ffc872;
-        margin-left: 30px;
-        display: inline-block;
-        text-decoration: none;
-        cursor: pointer;
-        opacity: .5;
-        transition: 100ms all ease-in-out;
-    }
+    /*Navegacion*/
+        .navegation{
+            /*transform: rotate(-90deg) translateX(28px);*/
+            margin: 5vh 0 0 0;
+        }
 
-    .navegation li a:hover {
-        opacity: 1;
-        color: #7ace67;
-        transform: scale(1.1);
-    }
+        .navegation a {
+            font-size: 1.5vw;
+            color: #ffc872;
+            display: inline-block;
+            padding: 0.7vh;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: .5;
+            transform: rotate(-90deg);
+            transition: 100ms all ease-in-out;
+        }
 
-    .navegation ul li{
-        list-style: none;
-    }
+        .navegation li a:hover {
+            opacity: 1;
+            color: #7ace67;
+            transform: scale(1.1);
+        }
+
+        .navegation ul li{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+    /* Footer */
+        .footer{
+            /*transform: rotate(-90deg) translateX(28px);*/
+            margin: 0 0 5vh 0;
+            padding: 0;
+        }
+
+        .footer a {
+            font-size: 1.5vw;
+            color: #ffc872;
+            display: inline-block;
+            padding: 0.7vh;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: .5;
+            transform: rotate(-90deg);
+            transition: 100ms all ease-in-out;
+        }
+
+        .footer li a:hover {
+            opacity: 1;
+            color: #fd676c;
+            transform: scale(1.1);
+        }
+
+        .footer ul li{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
 
 /* Header */
 
     .header{
         min-height: 100vh;
-        padding: 20px 50px;
+        padding: 0 3%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -95,12 +141,12 @@
 
         .header h1{
             color: #ffe3b3;
-            font-size: 8vw;
+            font-size: 6vw;
         }
 
         .header h2{
             color: #ffe3b3;
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
 
         .header h2 .auto-input{
@@ -111,15 +157,21 @@
     .work{
         width: 100%;
         min-height: 100vh;
-        padding: 0 50px ;
+        padding: 0 2%;
         display: flex;
-        flex-direction:column;
-        justify-content: space-around;
+        flex-direction:row;
+        align-items: center;
+        justify-content: left;
     }
 
     .work h2{
         font-size: 5vw;
         color: #7ace67;
+        opacity: 0.5;
+        transition: 100ms all ease-in;
+    }
+    .work .SubWork:hover h2{
+        opacity: 1;
     }
 
     .work #SubTitle{
@@ -127,15 +179,20 @@
         font-size: 1vw;
         opacity: 0.5;
         transform: translateX(33px);
-        margin: 20px 0 30px 0 ;
     }
     .work .SubWork{
-        width: 100%;
+        max-width: 90%;
+        min-width: 50%;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: left;
     }
     .work .SubWork #bola2{
-        width: 10px;
-        height: 10px;
+        width: 1vw;
+        height: 1vw;
         opacity: 0.5;
         background: #fd676c;
         border-top-right-radius: 50%;
@@ -157,6 +214,12 @@
         color: #7ace67;
         margin-left: 20px;
         margin-top: 7px;
+        opacity: 0.5;
+        transition: 100ms all ease-in;
+    }
+
+    .work .SubWork:hover #iconoMenu{
+        opacity: 1;
     }
 
     .work ul li{
@@ -167,13 +230,22 @@
         transform: translateX(-10px);
     }
 
-    .title{
+    .titleDiv{
         display: flex;
         flex-direction:row;
+        justify-content: flex-start;
         align-items: center;
+        margin: 0 0 2vh 0;
+    }
+    .SubTitleDiv{
+        display: flex;
+        flex-direction:row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 5vh 0;
     }
 
-    .work #gradient{
+    /*.work #gradient{
         width: 10px;
         height: 10px;
         margin-left: 0;
@@ -192,7 +264,7 @@
     .work .SubLab:hover #gradient{
         margin-right: 95px;
         transform: rotate(90deg) translateX(2.25rem) translateY(-45px) scaleY(10)  scaleX(5);
-    }
+    }*/
 
     /* LIs */
 
@@ -224,18 +296,19 @@
             transition: 150ms all;
         }
         .linkContenido #bola{
-            width: 10px;
-            height: 10px;
+            width: 0.7vw;
+            height: 0.7vw;
             background: #fd676c;
+            opacity: 0.5;
             border-top-left-radius: 50%;
             border-bottom-left-radius: 50%;
-            margin-left: 20px;
+            margin-left: 1.4vw;
             transition: 150ms all;
         }
         .linkContenido h4{
             color: #ffe3b3;
             font-size: 1vw;
-            margin-left: 20px;
+            margin-left: 1.4vw;
             opacity: 0.4;
             transition: 150ms all;
         }
@@ -249,6 +322,7 @@
         }
         .work a:hover .linkContenido #bola{
             border-radius: 50%;
+            opacity: 1;
         }
 
 
@@ -256,55 +330,69 @@
     .about{
         width: 100%;
         min-height: 100vh;
-        padding: 0 50px;
+        padding: 0 3%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .about h2{
-        font-size: 4rem;
+        font-size: 4vw;
         color: #7ace67;
     }
 
     .about p{
         color: #ffe3b3;
-        font-size: 2;
+        font-size: 1.3vw;
+        max-width: 40%;
     }
 
-/* Footer */
-    .footer{
-        position: fixed;
-        bottom: 230px;
-        right: 20px;
-        text-align: right;
-        transform-origin: bottom right;
-        transform: rotate(-90deg) translateX(28px)
+/* Info Div */
+
+    .infoDiv{
+        max-width: 45%;
+        min-height: 80vh;
+        max-height: 85vh;
+        background-color: white;
+        border-radius: 10%;
+        opacity: 0.85;
+        padding: 2%;
+        transition: 200ms all ease-in-out;
+        border: 5px solid #7ace67;
+        display:none;
     }
 
-    .footer a {
-        font-size: 1.8rem;
-        color: #ffc872;
-        margin-right: 30px;
-        display: inline-block;
-        text-decoration: none;
-        cursor: pointer;
-        opacity: .5;
-        transition: 100ms all ease-in-out;
+    .infoDiv h2{
+        text-align: center;
+        font-size: 3.5vw;
     }
 
-    .footer li a:hover {
-        opacity: 1;
+    .infoDiv h3{
+        text-align: left;
+        font-size: 1vw;
         color: #fd676c;
-        transform: scale(1.1);
+        margin-bottom: 3vh;
     }
 
-    .footer ul li{
-        list-style: none;
+    .infoDiv p{
+        text-align: justify;
+        font-size: 1.2vw;
+        color: #ffc872;
     }
 
-    @media screen and (min-width: 1400px) { /* Pantalla Grande */
-        .navegation a{
+    .infoDiv #infoIcono{
+        font-size: 2.5vw;
+        transition: 100ms all ease-in;
+        color: #fd676c;
+    }
+
+    .infoDiv #infoIcono:hover{
+        color: #7ace67;
+        transform: scale(1.1) rotate(-15deg);
+    }
+
+   /* @media screen and (min-width: 1400px) { /* Pantalla Grande */
+        /*.navegation a{
             font-size: 3rem
         }
         .navegation{
@@ -315,15 +403,121 @@
         }
         .footer{
             bottom: 240px;
+        } 
+    }*/
+
+    @media screen and (max-width: 800px) { /* Pantalla Pequeña */
+        .barra{
+            justify-content: space-around;
+        }
+        .navegation{
+            margin: 0;
+        }
+        .footer{
+            margin: 0;
+        }
+
+        /**/
+        
+        .header h1{
+            font-size: 11vw;
+        }
+        .header h2{
+            font-size: 6vw;
+        }
+
+        /**/
+
+        .navegation a{
+            font-size: 6vw;
+        }
+        .footer a{
+            font-size: 6vw;
+        }
+
+        /**/
+
+        .work{
+            flex-direction: column;
+        }
+
+        .work h2{
+            font-size: 10vw;
+        }
+        .work #iconoMenu{
+            font-size: 8vw;
+        }
+        .work .SubWork #bola2{
+            width: 1.1vw;
+            height: 1.1vh;
+        }
+        .work #SubTitle{
+            font-size: 3vw;
+        }
+
+        /**/
+
+        .linkContenido h3{
+            font-size: 4.5vw;
+        }
+        .linkContenido #bola{
+            width: 1.4vw;
+            height: 1.4vh;
+        }
+        .linkContenido h4{
+            font-size: 2.5vw;
+        }
+
+        /**/
+
+        .about h2{
+            font-size: 10vw;
+        }
+    
+        .about p{
+            font-size: 3.4vw;
+            max-width: 70%;
+        }
+
+        /**/
+
+        .infoDiv{
+            max-width: 80%;
+            padding: 3%;
+        }
+
+        .infoDiv h3{
+            font-size: 3vw;
+        }
+
+        .infoDiv p{
+            font-size: 3.5vw;
+        }
+
+        .infoDiv #infoIcono{
+            font-size: 8vw;
         }
     }
 
-    @media screen and (max-width: 500px) { /* Pantalla Pequeña */
-        .header h1{
-            font-size: 4rem;
+    @media screen and (max-height: 280px) { /* Pantalla Estrecha */
+        .footer{
+            display: none;
         }
-        .header h2{
-            font-size: 2.85ren;
+    }
+
+    /* Animaciones */
+
+    @keyframes infoDivAnim {
+        0%{
+            transform: translate(100%);
+            opacity: 0;
         }
-        
+    }
+
+    @keyframes infoDivAnimSalida {
+        100%{
+            /*transform: translate(100%);*/
+            opacity: 0;
+            display:none;
+        }
     }

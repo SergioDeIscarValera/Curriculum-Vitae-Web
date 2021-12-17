@@ -68,7 +68,7 @@ const LamparaC = []
 
                 mixer = new THREE.AnimationMixer( gltfD.scene )
                 droneClips = gltfD.animations
-                
+                console.log(droneClips)
 
                 gltfD.scene.traverse( function( DroneU ) {
                     if ( DroneU.isMesh) {
@@ -95,8 +95,33 @@ const LamparaC = []
 
         scene.add(pantalla)
     // Funciones Pantalla
+        
+        // Div Contenido Informacion
+        let InfoDiv = document.getElementById('InfoDiv').style
+
+        let infoIcono = document.getElementById('infoIcono')
+        infoIcono.onclick = infoIconoFN
+        function infoIconoFN(){
+            InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+            InfoDiv.animationFillMode = 'forwards';
+
+            // Close
+
+            linkUnityBooClcik = false
+            linkBlenderBooClcik = false
+            linkSolidityBooClcik = false
+            linkHTMLCSSJSBooClcik = false
+            linkAfterBooClcik = false
+            linkPremiereBooClcik = false
+        }
+
+        let infoTitle = document.getElementById('infoTitle')
+        let infoSubTitle = document.getElementById('infoSubTitle')
+        let infoText = document.getElementById('infoText')
+
         // Unity
-            var unityTexture = new THREE.TextureLoader().load('IMG/Unity.png')
+            // Pantalla
+            var unityTexture = new THREE.TextureLoader().load('IMG/Unity2.png')
             let materialPantallaUnity = new THREE.MeshBasicMaterial({map: unityTexture})
 
             let linkUnity = document.getElementById('LinkWork1')
@@ -116,7 +141,36 @@ const LamparaC = []
                         }
                     }
                 }
+
+            // Contenido
+
+            linkUnity.onclick = clickLinkUnity
+            var linkUnityBooClcik = Boolean(false)
+                function clickLinkUnity(){
+                    if(linkUnityBooClcik== false){
+                        InfoDiv.display = "block"
+                        infoTitle.textContent = 'UNITY'
+                        infoSubTitle.textContent = 'Unity Subtitle:'
+                        infoText.textContent = 'Contenido unity parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                        InfoDiv.animation = 'infoDivAnim 200ms ease-out';
+                        linkUnityBooClcik = true
+                    } else{
+                        InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                        InfoDiv.animationFillMode = 'forwards';
+
+                        // Close
+
+                        linkUnityBooClcik = false
+                        linkBlenderBooClcik = false
+                        linkSolidityBooClcik = false
+                        linkHTMLCSSJSBooClcik = false
+                        linkAfterBooClcik = false
+                        linkPremiereBooClcik = false
+                    }
+                }
+
         // Blender
+            // Pantalla
             var blenderTexture = new THREE.TextureLoader().load('IMG/Blender.png')
             let materialPantallaBlender = new THREE.MeshBasicMaterial({map: blenderTexture})
 
@@ -136,7 +190,234 @@ const LamparaC = []
                             linkBlenderBoo = false
                         }
                     }
-                }        
+                }
+
+                // Contenido
+
+                linkBlender.onclick = clickLinkBlender
+                var linkBlenderBooClcik = Boolean(false)
+                    function clickLinkBlender(){
+                        if(linkBlenderBooClcik== false){
+                            InfoDiv.display = "block"
+                            infoTitle.textContent = 'BLENDER'
+                            infoSubTitle.textContent = 'Blender Subtitle:'
+                            infoText.textContent = 'Contenido blender parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            InfoDiv.animation = 'infoDivAnim 200ms ease-out';
+                            linkBlenderBooClcik = true
+                        } else{
+                            InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                            InfoDiv.animationFillMode = 'forwards';
+                            
+                            // Close
+
+                            linkUnityBooClcik = false
+                            linkBlenderBooClcik = false
+                            linkSolidityBooClcik = false
+                            linkHTMLCSSJSBooClcik = false
+                            linkAfterBooClcik = false
+                            linkPremiereBooClcik = false
+                        }
+                    }
+        
+        // HTMLCSSJS
+            // Pantalla
+            var HTMLCSSJSTexture = new THREE.TextureLoader().load('IMG/HTMLCSSJS.png')
+            let materialPantallaHTMLCSSJS = new THREE.MeshBasicMaterial({map: HTMLCSSJSTexture})
+
+            let linkHTMLCSSJS= document.getElementById('LinkWork3')
+            console.log(linkHTMLCSSJS)
+            linkHTMLCSSJS.onmouseover = linkHTMLCSSJSFN
+            linkHTMLCSSJS.onmouseout = linkHTMLCSSJSFN
+            var linkHTMLCSSJSBoo = Boolean(false)
+                function linkHTMLCSSJSFN(evento){
+                    if(booleanClickDrone == false)
+                    {
+                        if(linkHTMLCSSJSBoo != true){
+                            pantalla.material = materialPantallaHTMLCSSJS
+                            linkHTMLCSSJSBoo = true
+                        }else{
+                            pantalla.material = materialPantallaApagada
+                            linkHTMLCSSJSBoo = false
+                        }
+                    }
+                }
+  
+                // Contenido
+
+                linkHTMLCSSJS.onclick = clickLinkHTMLCSSJS
+                var linkHTMLCSSJSBooClcik = Boolean(false)
+                    function clickLinkHTMLCSSJS(){
+                        if(linkHTMLCSSJSBooClcik== false){
+                            InfoDiv.display = "block"
+                            infoTitle.textContent = 'HTMLCSSJS'
+                            infoSubTitle.textContent = 'HTMLCSSJS Subtitle:'
+                            infoText.textContent = 'Contenido HTMLCSSJS parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            InfoDiv.animation = 'infoDivAnim 200ms ease-out';
+                            linkHTMLCSSJSBooClcik = true
+                        } else{
+                            InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                            InfoDiv.animationFillMode = 'forwards';
+
+                            // Close
+
+                            linkUnityBooClcik = false
+                            linkBlenderBooClcik = false
+                            linkSolidityBooClcik = false
+                            linkHTMLCSSJSBooClcik = false
+                            linkAfterBooClcik = false
+                            linkPremiereBooClcik = false
+                        }
+                    }
+                          
+        // SOLIDITY
+            // Pantalla
+            var solidityTexture = new THREE.TextureLoader().load('IMG/solidity.jfif')
+            let materialPantallaSolidity = new THREE.MeshBasicMaterial({map: solidityTexture})
+
+            let linkSolidity= document.getElementById('LinkWork4')
+            console.log(linkSolidity)
+            linkSolidity.onmouseover = linkSolidityFN
+            linkSolidity.onmouseout = linkSolidityFN
+            var linkSolidityBoo = Boolean(false)
+                function linkSolidityFN(evento){
+                    if(booleanClickDrone == false)
+                    {
+                        if(linkSolidityBoo != true){
+                            pantalla.material = materialPantallaSolidity
+                            linkSolidityBoo = true
+                        }else{
+                            pantalla.material = materialPantallaApagada
+                            linkSolidityBoo = false
+                        }
+                    }
+                }
+
+                // Contenido
+
+                linkSolidity.onclick = clickLinkSolidity
+                var linkSolidityBooClcik = Boolean(false)
+                    function clickLinkSolidity(){
+                        if(linkSolidityBooClcik== false){
+                            InfoDiv.display = "block"
+                            infoTitle.textContent = 'SOLIDITY'
+                            infoSubTitle.textContent = 'Solidity Subtitle:'
+                            infoText.textContent = 'Contenido solidity parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            InfoDiv.animation = 'infoDivAnim 200ms ease-out';
+                            linkSolidityBooClcik = true
+                        } else{
+                            InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                            InfoDiv.animationFillMode = 'forwards';
+                            
+                            // Close
+
+                            linkUnityBooClcik = false
+                            linkBlenderBooClcik = false
+                            linkSolidityBooClcik = false
+                            linkHTMLCSSJSBooClcik = false
+                            linkAfterBooClcik = false
+                            linkPremiereBooClcik = false
+                        }
+                    }
+        
+        // After Effects
+            // Pantalla
+            var afterTexture = new THREE.TextureLoader().load('IMG/After-Effects.jpg')
+            let materialPantallaAfter= new THREE.MeshBasicMaterial({map: afterTexture})
+
+            let linkAfter= document.getElementById('LinkWork6')
+            console.log(linkAfter)
+            linkAfter.onmouseover = linkAfterFN
+            linkAfter.onmouseout = linkAfterFN
+            var linkAfterBoo = Boolean(false)
+                function linkAfterFN(evento){
+                    if(booleanClickDrone == false)
+                    {
+                        if(linkAfterBoo != true){
+                            pantalla.material = materialPantallaAfter
+                            linkAfterBoo = true
+                        }else{
+                            pantalla.material = materialPantallaApagada
+                            linkAfterBoo = false
+                        }
+                    }
+                }
+                
+                // Contenido
+
+                linkAfter.onclick = clickLinkAfter
+                var linkAfterBooClcik = Boolean(false)
+                    function clickLinkAfter(){
+                        if(linkAfterBooClcik== false){
+                            InfoDiv.display = "block"
+                            infoTitle.textContent = 'AFTER EFFECTS'
+                            infoSubTitle.textContent = 'After Effects Subtitle:'
+                            infoText.textContent = 'Contenido after effects parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            InfoDiv.animation = 'infoDivAnim 200ms ease-out';
+                            linkAfterBooClcik = true
+                        } else{
+                            InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                            InfoDiv.animationFillMode = 'forwards';
+                            
+                            // Close
+
+                            linkUnityBooClcik = false
+                            linkBlenderBooClcik = false
+                            linkSolidityBooClcik = false
+                            linkHTMLCSSJSBooClcik = false
+                            linkAfterBooClcik = false
+                            linkPremiereBooClcik = false
+                        }
+                    }
+        
+        // Premiere Pro
+            // Pantalla
+            var premiereTexture = new THREE.TextureLoader().load('IMG/Premiere.png')
+            let materialPantallaPremiere= new THREE.MeshBasicMaterial({map: premiereTexture})
+
+            let linkPremiere= document.getElementById('LinkWork5')
+            console.log(linkPremiere)
+            linkPremiere.onmouseover = linkPremiereFN
+            linkPremiere.onmouseout = linkPremiereFN
+            var linkPremiereBoo = Boolean(false)
+                function linkPremiereFN(evento){
+                    if(booleanClickDrone == false)
+                    {
+                        if(linkPremiereBoo != true){
+                            pantalla.material = materialPantallaPremiere
+                            linkPremiereBoo = true
+                        }else{
+                            pantalla.material = materialPantallaApagada
+                            linkPremiereBoo = false
+                        }
+                    }
+                }
+
+            // Contenido
+
+            linkPremiere.onclick = clickLinkPremiere
+            var linkPremiereBooClcik = Boolean(false)
+                function clickLinkPremiere(){
+                    if(linkPremiereBooClcik== false){
+                        InfoDiv.display = "block"
+                        infoTitle.textContent = 'PREMIERE PRO'
+                        infoSubTitle.textContent = 'Premiere Pro Subtitle:'
+                        infoText.textContent = 'Contenido premiere pro parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                        InfoDiv.animation = 'infoDivAnim 200ms ease-out';
+                        linkPremiereBooClcik = true
+                    } else{
+                        InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                        InfoDiv.animationFillMode = 'forwards';
+                        
+                        // Close
+
+                        linkUnityBooClcik = false
+                        linkBlenderBooClcik = false
+                        linkSolidityBooClcik = false
+                        linkHTMLCSSJSBooClcik = false
+                        linkAfterBooClcik = false
+                        linkPremiereBooClcik = false
+                    }
+                }  
 
 // Materials
 
@@ -385,7 +666,7 @@ const LamparaC = []
         // Animation
             //var delta = clock.start(0);
             //if ( mixer ) mixer.update( delta  );
-            if (mixer) mixer.update(0.05);
+            if (mixer) mixer.update(0.014);
 
         // Light Help
             //helper.update()

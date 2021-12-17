@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../static/IMG/PolloSinFondo.png">
+    <link rel="shortcut icon" href="../static/IMG/icono-page.svg">
     <title>Sergio de Iscar</title> 
 </head>
 <body>
     <div class="contenedor"  id="contenido">
-        <div class="navegation" id="navid">
-            <ul>
-                <li class="list">
-                    <a href="#Menu3">
-                        <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
-                    </a>
-                    <a href="#Menu2">
-                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
-                    </a>
-                    <a href="#Menu1">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    </a>
-                </li>
-            </ul>
+        <div class="barra">
+            <div class="navegation" id="navid">
+                <ul>
+                    <li class="list">
+                        <a href="#Menu1">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        </a>
+                        <a href="#Menu2">
+                            <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                        </a>
+                        <a href="#Menu3">
+                            <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="mailto:seroigres888@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a id="colorID"><ion-icon name="color-palette-outline"></ion-icon></a>
+                        <a href="https://www.youtube.com/channel/UCOIvkG0oiLLC_jaGSVt65Jg" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="contenido">
             <div class="header" id="Menu1">
@@ -30,12 +45,12 @@
             </div>
             <div class="work" id="Menu2">
                 <div class="SubWork">
-                    <div class="title"><span id="gradient"></span> <h2>CT</h2>  <span id="iconoMenu"><ion-icon name="school-outline"></ion-icon></div>
+                    <div class="titleDiv"> <h2>CT</h2>  <span id="iconoMenu"><ion-icon name="school-outline"></ion-icon></div>
 
-                    <div class="title"><span id="bola2"></span><h3 id="SubTitle">Conocimientos Técnicos</h3></div>
+                    <div class="SubTitleDiv"><span id="bola2"></span><h3 id="SubTitle">Conocimientos Técnicos</h3></div>
 
                     <ul>
-                        <li>
+                        <li id="Prueba">
                             <a id="LinkWork1">
                                 <div class="linkContenido">
                                     <span id="gradienteBlock"></span><h3>Unity</h3> <span id="bola"></span> <h4>6 años</h4>
@@ -59,32 +74,39 @@
                         <li>
                             <a id="LinkWork4">
                                 <div class="linkContenido">
-                                    <span id="gradienteBlock"></span><h3>Adobe Premiere Pro</h3> <span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
+                                    <span id="gradienteBlock"></span><h3>Solidity</h3> <span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
                                 </div>             
                             </a>
                         </li>
                         <li>
                             <a id="LinkWork5">
                                 <div class="linkContenido">
-                                    <span id="gradienteBlock"></span><h3>Adobe After Effects</h3><span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
+                                    <span id="gradienteBlock"></span><h3>Adobe Premiere Pro</h3><span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
                                 </div>             
                             </a>
                         </li>
                         <li>
                             <a id="LinkWork6">
                                 <div class="linkContenido">
-                                    <span id="gradienteBlock"></span><h3>Cura</h3> <span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
+                                    <span id="gradienteBlock"></span><h3>Adobe After Effects</h3> <span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
                                 </div>             
                             </a>
                         </li>
                         <li>
                             <a id="LinkWork7">
                                 <div class="linkContenido">
-                                    <span id="gradienteBlock"></span><h3>Solidity</h3> <span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
+                                    <span id="gradienteBlock"></span><h3>Piloto Drone</h3> <span id="bola"></span> <h4>Lorem, ipsum dolor</h4>
                                 </div>             
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div class="infoDiv" id="InfoDiv">
+                    <ion-icon id="infoIcono" name="close-circle-outline"></ion-icon>
+                    <h2 id="infoTitle">Title</h2>
+                    <h3 id="infoSubTitle">SubTitle</h3>
+                    <p id="infoText"></p>
+                    <img id="imgInfo">
                 </div>
             </div>
             <div class="about" id="Menu3">
@@ -92,17 +114,6 @@
 
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, ipsam. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.</p>
             </div>
-
-            <div class="footer">
-                <ul>
-                    <li>
-                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a id="colorID"><ion-icon name="color-palette-outline"></ion-icon></a>
-                        <a href="https://www.youtube.com/channel/UCOIvkG0oiLLC_jaGSVt65Jg" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-                        <a href="mailto:seroigres888@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-                    </li>
-                </ul>
-            </div>      
         </div>
     </div>
     <video id="video1" allow="autoplay"></video>
