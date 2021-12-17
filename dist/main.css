@@ -515,7 +515,7 @@
 
     @keyframes infoDivAnimSalida {
         100%{
-            transform: translate(100%);
+            /*transform: translate(100%);*/
             opacity: 0;
             display:none;
         }
