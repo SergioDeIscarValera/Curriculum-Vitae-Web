@@ -111,13 +111,19 @@ const LamparaC = []
             linkBlenderBooClcik = false
             linkSolidityBooClcik = false
             linkHTMLCSSJSBooClcik = false
-            linkAfterBooClcik = false
+            linkImpresionBooClcik = false
             linkPremiereBooClcik = false
         }
 
         let infoTitle = document.getElementById('infoTitle')
         let infoSubTitle = document.getElementById('infoSubTitle')
         let infoText = document.getElementById('infoText')
+
+        let Estrella1 = document.getElementById('Estrella1').style
+        let Estrella2 = document.getElementById('Estrella2').style
+        let Estrella3 = document.getElementById('Estrella3').style
+        let Estrella4 = document.getElementById('Estrella4').style
+        let Estrella5 = document.getElementById('Estrella5').style
 
         // Unity
             // Pantalla
@@ -152,8 +158,21 @@ const LamparaC = []
                         infoTitle.textContent = 'UNITY'
                         infoSubTitle.textContent = 'Unity Subtitle:'
                         infoText.textContent = 'Contenido unity parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                        
+                        Estrella1.color = "#7ace67"
+                        Estrella2.color = "#7ace67"
+                        Estrella3.color = "#7ace67"
+                        Estrella4.color = "#7ace67"
+                        Estrella5.color = "black"
+                        
                         InfoDiv.animation = 'infoDivAnim 200ms ease-out';
                         linkUnityBooClcik = true
+
+                        linkBlenderBooClcik = false
+                        linkSolidityBooClcik = false
+                        linkHTMLCSSJSBooClcik = false
+                        linkImpresionBooClcik = false
+                        linkPremiereBooClcik = false
                     } else{
                         InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
                         InfoDiv.animationFillMode = 'forwards';
@@ -164,7 +183,7 @@ const LamparaC = []
                         linkBlenderBooClcik = false
                         linkSolidityBooClcik = false
                         linkHTMLCSSJSBooClcik = false
-                        linkAfterBooClcik = false
+                        linkImpresionBooClcik = false
                         linkPremiereBooClcik = false
                     }
                 }
@@ -200,10 +219,23 @@ const LamparaC = []
                         if(linkBlenderBooClcik== false){
                             InfoDiv.display = "block"
                             infoTitle.textContent = 'BLENDER'
-                            infoSubTitle.textContent = 'Blender Subtitle:'
-                            infoText.textContent = 'Contenido blender parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            infoSubTitle.textContent = 'El Mejor Programa De Modelado 3D:'
+                            infoText.textContent = 'Cuando empecé a hacer videojuegos en unity me di cuenta que los modelos que había en internet no se adecuaban a mis necesidades, por lo que decidí aprender un programa que me permitiese hacer cualquier tipo de modelo y ese fue blender. En los 4 años que llevo usándolo he aprendido a modelar, animar, hacer renders, también se sobre nodos y simulación de fluidos...'
+                            
+                            Estrella1.color = "#7ace67"
+                            Estrella2.color = "#7ace67"
+                            Estrella3.color = "#7ace67"
+                            Estrella4.color = "#7ace67"
+                            Estrella5.color = "black"
+                            
                             InfoDiv.animation = 'infoDivAnim 200ms ease-out';
                             linkBlenderBooClcik = true
+
+                            linkUnityBooClcik = false
+                            linkSolidityBooClcik = false
+                            linkHTMLCSSJSBooClcik = false
+                            linkImpresionBooClcik = false
+                            linkPremiereBooClcik = false
                         } else{
                             InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
                             InfoDiv.animationFillMode = 'forwards';
@@ -214,7 +246,7 @@ const LamparaC = []
                             linkBlenderBooClcik = false
                             linkSolidityBooClcik = false
                             linkHTMLCSSJSBooClcik = false
-                            linkAfterBooClcik = false
+                            linkImpresionBooClcik = false
                             linkPremiereBooClcik = false
                         }
                     }
@@ -249,11 +281,24 @@ const LamparaC = []
                     function clickLinkHTMLCSSJS(){
                         if(linkHTMLCSSJSBooClcik== false){
                             InfoDiv.display = "block"
-                            infoTitle.textContent = 'HTMLCSSJS'
-                            infoSubTitle.textContent = 'HTMLCSSJS Subtitle:'
-                            infoText.textContent = 'Contenido HTMLCSSJS parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            infoTitle.textContent = 'HTML CSS JS'
+                            infoSubTitle.textContent = 'Si No Estas En Internet No Existes:'
+                            infoText.textContent = 'Siempre me a picado la curiosidad con saber como se hacen las webs, pero no fue hasta el segundo año del grado medio en sistemas microinformáticos y redes que me puse ha aprender html, css y java. Ya sabia programar en C# por lo que se me hizo muy sencillo aprenderlo, una vez que sabia lo básico investigue por internet y aprendí sobre Three.js, diseño responsive y programación en javascript.'
+                            
+                            Estrella1.color = "#7ace67"
+                            Estrella2.color = "#7ace67"
+                            Estrella3.color = "#7ace67"
+                            Estrella4.color = "black"
+                            Estrella5.color = "black"
+                            
                             InfoDiv.animation = 'infoDivAnim 200ms ease-out';
                             linkHTMLCSSJSBooClcik = true
+
+                            linkUnityBooClcik = false
+                            linkBlenderBooClcik = false
+                            linkSolidityBooClcik = false
+                            linkImpresionBooClcik = false
+                            linkPremiereBooClcik = false
                         } else{
                             InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
                             InfoDiv.animationFillMode = 'forwards';
@@ -264,7 +309,7 @@ const LamparaC = []
                             linkBlenderBooClcik = false
                             linkSolidityBooClcik = false
                             linkHTMLCSSJSBooClcik = false
-                            linkAfterBooClcik = false
+                            linkImpresionBooClcik = false
                             linkPremiereBooClcik = false
                         }
                     }
@@ -302,8 +347,21 @@ const LamparaC = []
                             infoTitle.textContent = 'SOLIDITY'
                             infoSubTitle.textContent = 'El Lenguaje Del Futuro De Las Finanzas:'
                             infoText.textContent = 'Las tecnologías avanzan muy rápido y hay que estar actualizándose constantemente, por eso he estudiado y aprendido el lenguaje de programación solidity. Este lenguaje se utiliza para crear smart contracts, que son trozos de códigos capaces de gestionar criptodivisas (como por ejemplo ethereum). Como con todo he aprendido por mi cuenta rebuscando por internet, pero en este caso me entusiasmo tanto que hice un curso por internet y he leído varios libro tutórales...'
+                            
+                            Estrella1.color = "#7ace67"
+                            Estrella2.color = "#7ace67"
+                            Estrella3.color = "#7ace67"
+                            Estrella4.color = "black"
+                            Estrella5.color = "black"
+                            
                             InfoDiv.animation = 'infoDivAnim 200ms ease-out';
                             linkSolidityBooClcik = true
+
+                            linkUnityBooClcik = false
+                            linkBlenderBooClcik = false
+                            linkHTMLCSSJSBooClcik = false
+                            linkImpresionBooClcik = false
+                            linkPremiereBooClcik = false
                         } else{
                             InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
                             InfoDiv.animationFillMode = 'forwards';
@@ -314,46 +372,59 @@ const LamparaC = []
                             linkBlenderBooClcik = false
                             linkSolidityBooClcik = false
                             linkHTMLCSSJSBooClcik = false
-                            linkAfterBooClcik = false
+                            linkImpresionBooClcik = false
                             linkPremiereBooClcik = false
                         }
                     }
         
-        // After Effects
+        // Impresion 3D
             // Pantalla
-            var afterTexture = new THREE.TextureLoader().load('IMG/After-Effects.jpg')
-            let materialPantallaAfter= new THREE.MeshBasicMaterial({map: afterTexture})
+            var ImpresionTexture = new THREE.TextureLoader().load('IMG/After-Effects.jpg')
+            let materialPantallaImpresion= new THREE.MeshBasicMaterial({map: ImpresionTexture})
 
-            let linkAfter= document.getElementById('LinkWork6')
-            console.log(linkAfter)
-            linkAfter.onmouseover = linkAfterFN
-            linkAfter.onmouseout = linkAfterFN
-            var linkAfterBoo = Boolean(false)
-                function linkAfterFN(evento){
+            let linkImpresion= document.getElementById('LinkWork6')
+            console.log(linkImpresion)
+            linkImpresion.onmouseover = linkImpresionFN
+            linkImpresion.onmouseout = linkImpresionFN
+            var linkImpresionBoo = Boolean(false)
+                function linkImpresionFN(evento){
                     if(booleanClickDrone == false)
                     {
-                        if(linkAfterBoo != true){
-                            pantalla.material = materialPantallaAfter
-                            linkAfterBoo = true
+                        if(linkImpresionBoo != true){
+                            pantalla.material = materialPantallaImpresion
+                            linkImpresionBoo = true
                         }else{
                             pantalla.material = materialPantallaApagada
-                            linkAfterBoo = false
+                            linkImpresionBoo = false
                         }
                     }
                 }
                 
                 // Contenido
 
-                linkAfter.onclick = clickLinkAfter
-                var linkAfterBooClcik = Boolean(false)
-                    function clickLinkAfter(){
-                        if(linkAfterBooClcik== false){
+                linkImpresion.onclick = clickLinkImpresion
+                var linkImpresionBooClcik = Boolean(false)
+                    function clickLinkImpresion(){
+                        if(linkImpresionBooClcik== false){
                             InfoDiv.display = "block"
-                            infoTitle.textContent = 'AFTER EFFECTS'
-                            infoSubTitle.textContent = 'After Effects Subtitle:'
-                            infoText.textContent = 'Contenido after effects parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                            infoTitle.textContent = 'Impresion EFFECTS'
+                            infoSubTitle.textContent = 'Impresion Effects Subtitle:'
+                            infoText.textContent = 'Empecé la impresión en 3D en el año 2019 y junto con un compañero de clase montamos un pequeño proyecto, el proyecto se llamo ¨SupaPrint¨ y ofrecíamos el servicio de impresión, es decir la gente nos contactaba y nosotros imprimíamos lo que nos pidiesen, desde figuras, llaveros... hasta piezas mecánicas. He utilizado impresoras de filamento tradicional y impresoras láser de resina.'
+                            
+                            Estrella1.color = "#7ace67"
+                            Estrella2.color = "#7ace67"
+                            Estrella3.color = "#7ace67"
+                            Estrella4.color = "#7ace67"
+                            Estrella5.color = "black"
+                            
                             InfoDiv.animation = 'infoDivAnim 200ms ease-out';
-                            linkAfterBooClcik = true
+                            linkImpresionBooClcik = true
+
+                            linkUnityBooClcik = false
+                            linkBlenderBooClcik = false
+                            linkSolidityBooClcik = false
+                            linkHTMLCSSJSBooClcik = false
+                            linkPremiereBooClcik = false
                         } else{
                             InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
                             InfoDiv.animationFillMode = 'forwards';
@@ -364,7 +435,7 @@ const LamparaC = []
                             linkBlenderBooClcik = false
                             linkSolidityBooClcik = false
                             linkHTMLCSSJSBooClcik = false
-                            linkAfterBooClcik = false
+                            linkImpresionBooClcik = false
                             linkPremiereBooClcik = false
                         }
                     }
@@ -401,9 +472,22 @@ const LamparaC = []
                         InfoDiv.display = "block"
                         infoTitle.textContent = 'PREMIERE PRO'
                         infoSubTitle.textContent = 'Premiere Pro Subtitle:'
-                        infoText.textContent = 'Contenido premiere pro parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                        infoText.textContent = 'Cuando tenia al rededor de 10 años empecé a editar vídeo con el programa camtasia pero se me quedaba pequeño para lo que yo quería hacer. Después de unos años encontré el programa premiere pro y con el aprendí a editar de verdad. En el canal de youtube donde voy subiendo mis vídeos filmados con drones, tengo también directos en los que se ve como uso premiere pro y after effects. También podéis ver un pequeño vídeo en esta web o bien clicando sobre el drone que hay en el escritorio o clicando sobre la entrada que dice ¨Piloto De Drones¨.'
+                        
+                        Estrella1.color = "#7ace67"
+                        Estrella2.color = "#7ace67"
+                        Estrella3.color = "#7ace67"
+                        Estrella4.color = "black"
+                        Estrella5.color = "black"
+                        
                         InfoDiv.animation = 'infoDivAnim 200ms ease-out';
                         linkPremiereBooClcik = true
+
+                        linkUnityBooClcik = false
+                        linkBlenderBooClcik = false
+                        linkSolidityBooClcik = false
+                        linkHTMLCSSJSBooClcik = false
+                        linkImpresionBooClcik = false   
                     } else{
                         InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
                         InfoDiv.animationFillMode = 'forwards';
@@ -414,10 +498,82 @@ const LamparaC = []
                         linkBlenderBooClcik = false
                         linkSolidityBooClcik = false
                         linkHTMLCSSJSBooClcik = false
-                        linkAfterBooClcik = false
+                        linkImpresionBooClcik = false
                         linkPremiereBooClcik = false
                     }
-                }  
+                }
+
+        // Piloto De Drones
+            // Pantalla
+            var pilotoTexture = new THREE.TextureLoader().load('IMG/Click.jpg')
+            let materialPantallaPiloto= new THREE.MeshBasicMaterial({map: pilotoTexture})
+
+            let linkPiloto= document.getElementById('LinkWork7')
+            linkPiloto.onmouseover = linkPilotoFN
+            linkPiloto.onmouseout = linkPilotoFN
+            var linkPilotoBoo = Boolean(false)
+                function linkPilotoFN(evento){
+                    if(booleanClickDrone == false)
+                    {
+                        if(linkPilotoBoo != true){
+                            pantalla.material = materialPantallaPiloto
+                            linkPilotoBoo = true
+                        }else{
+                            pantalla.material = materialPantallaApagada
+                            linkPilotoBoo = false
+                        }
+                    }
+                }
+
+            // Contenido
+
+            linkPiloto.onclick = linkPilotoClickFN
+                function linkPilotoClickFN(evento){
+
+                        InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                        InfoDiv.animationFillMode = 'forwards';
+                        
+                        // Close
+
+                        linkUnityBooClcik = false
+                        linkBlenderBooClcik = false
+                        linkSolidityBooClcik = false
+                        linkHTMLCSSJSBooClcik = false
+                        linkImpresionBooClcik = false
+                        linkPremiereBooClcik = false
+
+                    if(timpoClik <= 0){
+                        if(booleanClickDrone == false){  // Prender
+                            console.log('Prender')
+                
+                            pantalla.material = materialPantallaVideo
+                            video.play()
+
+                            droneClips.forEach( ( clip ) => {
+                                mixer.clipAction( clip ).play()
+                                
+                                i ++
+                            } );
+                                        
+                            timpoClik = 1
+                
+                            booleanClickDrone = true
+                        }else{                      // Apagar
+                            console.log('Apagar')
+
+                            droneClips.forEach( ( clip ) => {
+                                mixer.clipAction( clip ).stop()
+                                i ++
+                            } );
+                            
+                            pantalla.material = materialPantallaApagada
+                            video.pause()
+                            timpoClik = 1
+                    
+                            booleanClickDrone = Boolean(false)
+                        }
+                    }
+                }
 
 // Materials
 
@@ -443,7 +599,7 @@ const LamparaC = []
         scene.add(ventanaPoint,ventanaPoint.target)
         //scene.add(ventanaPoint, helperVentana, ventanaPoint.target)
     //Lampara
-        const lamparaLight = new THREE.SpotLight(0xffe892, 100, 0.18, Math.PI/3.5, 0.9, 1)
+        const lamparaLight = new THREE.SpotLight(0xffe892, 40, 0.18, Math.PI/3.5, 0.9, 1)
         lamparaLight.position.set(-0.832, 0.53, 0)
         lamparaLight.target.position.set(-0.832,0,0)
         lamparaLight.castShadow = true
@@ -579,6 +735,19 @@ const LamparaC = []
                     
                     for(const intersect of intersectsDrone){ 
                         if(timpoClik <= 0){
+
+                                InfoDiv.animation = 'infoDivAnimSalida 200ms ease-out';
+                                InfoDiv.animationFillMode = 'forwards';
+                                
+                                // Close
+        
+                                linkUnityBooClcik = false
+                                linkBlenderBooClcik = false
+                                linkSolidityBooClcik = false
+                                linkHTMLCSSJSBooClcik = false
+                                linkImpresionBooClcik = false
+                                linkPremiereBooClcik = false
+
                             if(booleanClickDrone == false){  // Prender
                                 console.log('Prender')
                     
@@ -605,6 +774,8 @@ const LamparaC = []
                                 pantalla.material = materialPantallaApagada
                                 video.pause()
                                 timpoClik = 1
+
+                                linkPilotoBoo = false
                         
                                 booleanClickDrone = Boolean(false)
                             }
