@@ -163,8 +163,8 @@
 
 /* Arrow */
     .Arrow{
-        height: 80vh;
-        width: 1px;
+        height: 70vh;
+        width: 0.1vw;
         background: #ffc872;
         margin: 0 1%;
         position: relative;
@@ -394,6 +394,32 @@
         max-width: 40%;
     }
 
+    .about ul h2{
+        font-size: 2vw;
+        color: #ffe3b3;
+    }
+
+    .about ul h2 span{
+        font-size: 2vw;
+        color: #ffe3b3;
+    }
+
+    .about ul li{
+        font-size: 1.5vw;
+        color: #fd676c;
+        transform: translateX(4%);
+        margin-bottom: 2vh;
+        opacity: 0.5;
+        transition: 200ms all ease-in;
+        word-spacing: -0.5vw;
+    }
+
+    .about ul li:hover{
+        opacity: 1;
+        word-spacing: 0vw;
+    }
+
+
 /* Info Div */
 
     .infoDiv{
@@ -531,7 +557,7 @@
 
         
         .about span{
-            display: none;
+            font-size: 9vw;
         }
 
         .about h2{
@@ -541,6 +567,19 @@
         .about p{
             font-size: 3.4vw;
             max-width: 70%;
+        }
+
+        .about ul h2{
+            font-size: 6vw;
+        }
+
+        .about ul h2 span{
+            font-size: 6vw;
+        }
+    
+        .about ul li{
+            font-size: 3.8vw;
+            margin-bottom: 2vh;
         }
 
         /**/

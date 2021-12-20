@@ -156,8 +156,8 @@ const LamparaC = []
                     if(linkUnityBooClcik== false){
                         InfoDiv.display = "block"
                         infoTitle.textContent = 'UNITY'
-                        infoSubTitle.textContent = 'Unity Subtitle:'
-                        infoText.textContent = 'Contenido unity parrafo '+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat sapiente veritatis labore error hic ad, quod vel incidunt minima quas adipisci aperiam, itaque facere reiciendis officiis voluptate nulla nam!'
+                        infoSubTitle.textContent = 'Mi Mayor Pasión:'
+                        infoText.textContent = ''
                         
                         Estrella1.color = "#7ace67"
                         Estrella2.color = "#7ace67"
@@ -407,8 +407,8 @@ const LamparaC = []
                     function clickLinkImpresion(){
                         if(linkImpresionBooClcik== false){
                             InfoDiv.display = "block"
-                            infoTitle.textContent = 'Impresion EFFECTS'
-                            infoSubTitle.textContent = 'Impresion Effects Subtitle:'
+                            infoTitle.textContent = 'Impresion 3D'
+                            infoSubTitle.textContent = 'Del Mundo Virtual Al Real:'
                             infoText.textContent = 'Empecé la impresión en 3D en el año 2019 y junto con un compañero de clase montamos un pequeño proyecto, el proyecto se llamo ¨SupaPrint¨ y ofrecíamos el servicio de impresión, es decir la gente nos contactaba y nosotros imprimíamos lo que nos pidiesen, desde figuras, llaveros... hasta piezas mecánicas. He utilizado impresoras de filamento tradicional y impresoras láser de resina.'
                             
                             Estrella1.color = "#7ace67"
@@ -471,7 +471,7 @@ const LamparaC = []
                     if(linkPremiereBooClcik== false){
                         InfoDiv.display = "block"
                         infoTitle.textContent = 'PREMIERE PRO'
-                        infoSubTitle.textContent = 'Premiere Pro Subtitle:'
+                        infoSubTitle.textContent = 'El Mejor Software De Edición De Vídeo:'
                         infoText.textContent = 'Cuando tenia al rededor de 10 años empecé a editar vídeo con el programa camtasia pero se me quedaba pequeño para lo que yo quería hacer. Después de unos años encontré el programa premiere pro y con el aprendí a editar de verdad. En el canal de youtube donde voy subiendo mis vídeos filmados con drones, tengo también directos en los que se ve como uso premiere pro y after effects. También podéis ver un pequeño vídeo en esta web o bien clicando sobre el drone que hay en el escritorio o clicando sobre la entrada que dice ¨Piloto De Drones¨.'
                         
                         Estrella1.color = "#7ace67"
@@ -774,8 +774,6 @@ const LamparaC = []
                                 pantalla.material = materialPantallaApagada
                                 video.pause()
                                 timpoClik = 1
-
-                                linkPilotoBoo = false
                         
                                 booleanClickDrone = Boolean(false)
                             }
