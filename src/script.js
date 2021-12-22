@@ -156,7 +156,7 @@ const LamparaC = []
                         InfoDiv.display = "block"
                         infoTitle.textContent = 'UNITY'
                         infoSubTitle.textContent = 'Mi Mayor Pasión:'
-                        infoText.textContent = 'Llevo utilizando Unity desde 2015 y he creado más de 10 proyectos y un juego completo, con estos proyectos he aprendido a programar en C# (nivel avanzado-medio), creación de escenarios 3D y 2D, animaciones, físicas, shaders, partículas, diseño UX & UI, realidad virtual...'
+                        infoText.textContent = 'Llevo utilizando Unity desde 2015 y he creado más de 10 proyectos y un juego completo. Con estos proyectos he aprendido a programar en C# (nivel avanzado-medio), creación de escenarios 3D y 2D, animaciones, físicas, shaders, partículas, diseño UX & UI, realidad virtual...'
                         
                         Estrella1.color = "#7ace67"
                         Estrella2.color = "#7ace67"
@@ -219,7 +219,7 @@ const LamparaC = []
                             InfoDiv.display = "block"
                             infoTitle.textContent = 'BLENDER'
                             infoSubTitle.textContent = 'El Mejor Programa De Modelado 3D:'
-                            infoText.textContent = 'Cuando empecé a hacer videojuegos en unity me di cuenta que los modelos que había en internet no se adecuaban a mis necesidades, por lo que decidí aprender un programa que me permitiese hacer cualquier tipo de modelo y ese fue blender. En los 4 años que llevo usándolo he aprendido a modelar, animar, hacer renders, también se sobre nodos y simulación de fluidos...'
+                            infoText.textContent = 'Cuando empecé a hacer videojuegos en unity me di cuenta que los modelos que había en internet no se adecuaban a mis necesidades, por lo que decidí aprender un programa que me permitiese hacer cualquier tipo de modelo y ese fue blender. En los 4 años que llevo usándolo he aprendido a modelar, animar, hacer renders, también he aprendido sobre nodos y simulación de fluidos...'
                             
                             Estrella1.color = "#7ace67"
                             Estrella2.color = "#7ace67"
@@ -282,7 +282,7 @@ const LamparaC = []
                             InfoDiv.display = "block"
                             infoTitle.textContent = 'HTML CSS JS'
                             infoSubTitle.textContent = 'Si No Estas En Internet No Existes:'
-                            infoText.textContent = 'Siempre me a picado la curiosidad con saber como se hacen las webs, pero no fue hasta el segundo año del grado medio en sistemas microinformáticos y redes que me puse ha aprender html, css y java. Ya sabia programar en C# por lo que se me hizo muy sencillo aprenderlo, una vez que sabia lo básico investigue por internet y aprendí sobre Three.js, diseño responsive y programación en javascript.'
+                            infoText.textContent = 'Siempre me ha picado la curiosidad con saber como se hacen las webs, pero no fue hasta el segundo año del grado medio en sistemas microinformáticos y redes que me puse a aprender html, css y java. Ya sabia programar en C# por lo que se me hizo muy sencillo aprenderlo, una vez que sabia lo básico investigue por internet y aprendí sobre Three.js, diseño responsive y programación en javascript.'
                             
                             Estrella1.color = "#7ace67"
                             Estrella2.color = "#7ace67"
@@ -810,6 +810,10 @@ const LamparaC = []
 /**
  * Update
  */
+
+ var delta = 0
+ var speed = 120
+
     const tick = () => {
         const elapsedTime = clock.getElapsedTime()
 
@@ -838,9 +842,9 @@ const LamparaC = []
             }
 
         // Animation
-            var delta = clock.getDelta();
+            delta = clock.getDelta();
             //if ( mixer ) mixer.update( delta  );
-            if (mixer) mixer.update(delta * 250);
+            if (mixer) mixer.update(delta * speed);
             //console.log(delta)
 
         // Light Help
@@ -852,7 +856,7 @@ const LamparaC = []
             composer.render();
 
         // Call tick again on the next frame
-        window.requestAnimationFrame(tick)
+        requestAnimationFrame(tick)
     }
 
 tick()

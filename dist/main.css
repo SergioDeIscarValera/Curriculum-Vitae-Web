@@ -359,6 +359,10 @@
             opacity: 1;
         }
 
+        .work a:hover{
+            cursor: pointer;
+        }
+
 
 /* About */
     .about{
