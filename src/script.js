@@ -282,7 +282,7 @@ const LamparaC = []
                             InfoDiv.display = "block"
                             infoTitle.textContent = 'HTML CSS JS'
                             infoSubTitle.textContent = 'Si No Estas En Internet No Existes:'
-                            infoText.textContent = 'Siempre me ha picado la curiosidad con saber como se hacen las webs, pero no fue hasta el segundo año del grado medio en sistemas microinformáticos y redes que me puse a aprender html, css y java. Ya sabia programar en C# por lo que se me hizo muy sencillo aprenderlo, una vez que sabia lo básico investigue por internet y aprendí sobre Three.js, diseño responsive y programación en javascript.'
+                            infoText.textContent = 'Siempre me ha picado la curiosidad en saber como se hacen las webs, pero no fue hasta el segundo año del grado medio en sistemas microinformáticos y redes que me puse a aprender html, css y java. Ya sabía programar en C# por lo que se me hizo muy sencillo aprenderlo, una vez que sabía lo básico investigue por internet y aprendí sobre Three.js, diseño responsive y programación en javascript.'
                             
                             Estrella1.color = "#7ace67"
                             Estrella2.color = "#7ace67"
@@ -345,7 +345,7 @@ const LamparaC = []
                             InfoDiv.display = "block"
                             infoTitle.textContent = 'SOLIDITY'
                             infoSubTitle.textContent = 'El Lenguaje Del Futuro De Las Finanzas:'
-                            infoText.textContent = 'Las tecnologías avanzan muy rápido y hay que estar actualizándose constantemente, por eso he estudiado y aprendido el lenguaje de programación solidity. Este lenguaje se utiliza para crear smart contracts, que son trozos de códigos capaces de gestionar criptodivisas (como por ejemplo ethereum). Como con todo he aprendido por mi cuenta rebuscando por internet, pero en este caso me entusiasmo tanto que hice un curso por internet y he leído varios libro tutórales...'
+                            infoText.textContent = 'Las tecnologías avanzan muy rápido y hay que estar actualizándose, por eso he estudiado y aprendido el lenguaje de programación solidity. Este lenguaje se utiliza para crear smart contracts, que son trozos de códigos capaces de gestionar criptodivisas (como por ejemplo ethereum). Como con todo he aprendido por mi cuenta rebuscando por internet, pero en este caso me entusiasmo tanto que hice un curso por internet y he leído varios libros tutoriales...'
                             
                             Estrella1.color = "#7ace67"
                             Estrella2.color = "#7ace67"
@@ -408,7 +408,7 @@ const LamparaC = []
                             InfoDiv.display = "block"
                             infoTitle.textContent = 'Impresion 3D'
                             infoSubTitle.textContent = 'Del Mundo Virtual Al Real:'
-                            infoText.textContent = 'Empecé la impresión en 3D en el año 2019 y junto con un compañero de clase montamos un pequeño proyecto, el proyecto se llamo ¨SupaPrint¨ y ofrecíamos el servicio de impresión, es decir la gente nos contactaba y nosotros imprimíamos lo que nos pidiesen, desde figuras, llaveros... hasta piezas mecánicas. He utilizado impresoras de filamento tradicional y impresoras láser de resina.'
+                            infoText.textContent = 'Empecé la impresión en 3D en el año 2019 y junto con un compañero de clase montamos un pequeño proyecto, el proyecto se llamó ¨SupaPrint¨ y ofrecíamos el servicio de impresión, es decir la gente nos contactaba y nosotros imprimíamos lo que nos pidiesen, desde figuras, llaveros... hasta piezas mecánicas. He utilizado impresoras de filamento tradicional e impresoras láser de resina.'
                             
                             Estrella1.color = "#7ace67"
                             Estrella2.color = "#7ace67"
@@ -471,7 +471,7 @@ const LamparaC = []
                         InfoDiv.display = "block"
                         infoTitle.textContent = 'PREMIERE PRO'
                         infoSubTitle.textContent = 'El Mejor Software De Edición De Vídeo:'
-                        infoText.textContent = 'Cuando tenia al rededor de 10 años empecé a editar vídeo con el programa camtasia pero se me quedaba pequeño para lo que yo quería hacer. Después de unos años encontré el programa premiere pro y con el aprendí a editar de verdad. En el canal de youtube donde voy subiendo mis vídeos filmados con drones, tengo también directos en los que se ve como uso premiere pro y after effects. También podéis ver un pequeño vídeo en esta web o bien clicando sobre el drone que hay en el escritorio o clicando sobre la entrada que dice ¨Piloto De Drones¨.'
+                        infoText.textContent = 'Cuando tenia alrededor de 10 años empecé a editar vídeo con el programa camtasia pero se me quedaba pequeño para lo que yo quería hacer. Después de unos años encontré el programa premiere pro y con el aprendí a editar de verdad. En el canal de youtube donde voy subiendo mis vídeos filmados con drones, tengo también directos en los que se ve como uso premiere pro y after effects. También podéis ver un pequeño vídeo en esta web o bien clicando sobre el drone que hay en el escritorio o clicando sobre la entrada que dice ¨Piloto De Drones¨.'
                         
                         Estrella1.color = "#7ace67"
                         Estrella2.color = "#7ace67"
