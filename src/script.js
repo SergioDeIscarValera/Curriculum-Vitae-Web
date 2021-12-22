@@ -811,8 +811,8 @@ const LamparaC = []
  * Update
  */
 
- var delta = 0
- var speed = 120
+ //var delta = 0
+ //var speed = 120
 
     const tick = () => {
         const elapsedTime = clock.getElapsedTime()
@@ -842,9 +842,9 @@ const LamparaC = []
             }
 
         // Animation
-            delta = clock.getDelta();
+            //delta = clock.getDelta();
             //if ( mixer ) mixer.update( delta  );
-            if (mixer) mixer.update(delta * speed);
+            if (mixer) mixer.update(0.008);
             //console.log(delta)
 
         // Light Help
