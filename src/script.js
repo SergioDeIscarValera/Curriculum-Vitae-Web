@@ -1,15 +1,15 @@
 import './style.css';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'; 
-import * as dat from 'dat.gui';
+// import * as dat from 'dat.gui';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
-import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 const gltfLoader = new GLTFLoader()
 gltfLoader.setPath('./GLTF/')
 
 // Debug
+
 //const gui = new dat.GUI() // Esto es la interfaz grafica para editar valores en directo
 
 // Canvas
@@ -80,7 +80,7 @@ const LamparaC = []
 // Video
     // Cargar el video
         let video = document.getElementById('video1')
-        video.src = "./Videos/LucasRojo.mp4"
+        video.src = "./Videos/video.mp4"
 
     // Textura y material del video
         let videoTexture = new THREE.VideoTexture(video)
@@ -156,7 +156,7 @@ const LamparaC = []
                         InfoDiv.display = "block"
                         infoTitle.textContent = 'UNITY'
                         infoSubTitle.textContent = 'Mi Mayor Pasión:'
-                        infoText.textContent = ''
+                        infoText.textContent = 'Llevo utilizando Unity desde 2015 y he creado más de 10 proyectos y un juego completo, con estos proyectos he aprendido a programar en C# (nivel avanzado-medio), creación de escenarios 3D y 2D, animaciones, físicas, shaders, partículas, diseño UX & UI, realidad virtual...'
                         
                         Estrella1.color = "#7ace67"
                         Estrella2.color = "#7ace67"
@@ -519,6 +519,12 @@ const LamparaC = []
                             linkPilotoBoo = true
                         }else{
                             pantalla.material = materialPantallaApagada
+                            linkPilotoBoo = false
+                        }
+                    } else{
+                        if(linkPilotoBoo != true){
+                            linkPilotoBoo = true
+                        }else{
                             linkPilotoBoo = false
                         }
                     }

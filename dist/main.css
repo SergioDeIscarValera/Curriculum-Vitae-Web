@@ -394,6 +394,10 @@
         max-width: 40%;
     }
 
+    .about ul{
+        width: 96%;
+    }
+
     .about ul h2{
         font-size: 2vw;
         color: #ffe3b3;
@@ -407,7 +411,7 @@
     .about ul li{
         font-size: 1.5vw;
         color: #fd676c;
-        transform: translateX(4%);
+        transform: translateX(3%);
         margin-bottom: 2vh;
         opacity: 0.5;
         transition: 200ms all ease-in;
@@ -570,11 +574,11 @@
         }
 
         .about ul h2{
-            font-size: 6vw;
+            font-size: 5vw;
         }
 
         .about ul h2 span{
-            font-size: 6vw;
+            font-size: 5vw;
         }
     
         .about ul li{
