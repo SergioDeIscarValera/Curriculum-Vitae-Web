@@ -838,9 +838,10 @@ const LamparaC = []
             }
 
         // Animation
-            //var delta = clock.start(0);
+            var delta = clock.getDelta();
             //if ( mixer ) mixer.update( delta  );
-            if (mixer) mixer.update(0.014);
+            if (mixer) mixer.update(delta * 250);
+            //console.log(delta)
 
         // Light Help
             //helper.update()
